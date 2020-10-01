@@ -1,0 +1,21 @@
+.style{
+    display: 'inline-flex';
+    vertical-align: text-bottom;
+    box-sizing:inherit;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    padding-left: 20px;
+    padding-right: 10px;
+    /* border: 1px solid rgba(63, 3, 3, 0.226);
+    border-radius: 5px */
+    
+   
+}
+
+.search{
+   
+    color: lawngreen;
+   
+  border-radius: 5px
+}

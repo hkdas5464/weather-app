@@ -1,0 +1,27 @@
+body{
+    background-color: skyblue;
+}
+.card{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    color: #230d6c
+    ;
+    border: 2px solid rgba(35, 14, 109, 0.685);
+    border-radius: 5px;
+    text-align: center;
+}
+.data{
+    float: left;
+}
+.sun{
+    width: 25%;
+}
+.day { background: url('./sun.png');
+    width: 25%; 
+    align-items: center;
+}
+.temp{
+    font-size: 50px;;
+}
