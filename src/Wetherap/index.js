@@ -11,10 +11,16 @@ function App() {
     const [state, Setstate] = useState("bokaro");
     const [person, setperson] = useState(null);
 
+    const onKeyPress = (event) => {
+        if (event.key === "Enter") {
+            fetchdata();
+        }
+    }
+
     
     const fetchdata = async () => {
         const response = await axios.get(
-            `https://api.openweathermap.org/data/2.5/weather?q=${state}&units=metric&appid=b14425a6554d189a2d7dc18a8e7d7263`
+            `https://api.openweathermap.org/data/2.5/weather?q=${state}&units=metric&appid='API_KEY'`
         );
 
         setperson(response.data);
@@ -32,7 +38,7 @@ function App() {
                id="standard-basic"
                 label="Enter Your City Name"
                
-             
+                onKeyPress={onKeyPress}
                 onChange={e => Setstate(e.target.value)}
                 name="searchText"
 
